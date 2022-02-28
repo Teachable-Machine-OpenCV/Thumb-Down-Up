@@ -14,8 +14,8 @@ model = load_model('keras_model.h5')
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
 # Replace this with the path to your image
-image = Image.open('img01.jpeg')
-img = cv2.imread('img01.jpeg')
+image = Image.open('img02.jpeg')
+img = cv2.imread('img02.jpeg')
 
 # Webcam Video input
 # cap = cv2.VideoCapture(1)
