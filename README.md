@@ -2,7 +2,7 @@
 
 * Teachable Machine 으로 Tensorflow/Keras Model 생성
 
-  * *.h5
+  * keras_model.h5
 
   * label.txt
 
@@ -14,5 +14,5 @@
   
   * webcam
 
-<img width="370" src="https://github.com/Teachable-Machine-OpenCV/Thumb-Down-Up/blob/main/Thumb_Infer01.png">
+<img width="370" src="https://github.com/Teachable-Machine-OpenCV/Thumb-Down-Up/blob/main/Thumb_infer01.png?raw=true">
                                                                                                              
