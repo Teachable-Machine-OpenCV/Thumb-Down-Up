@@ -1,4 +1,4 @@
-# Thumb-Down-Up
+# Thumb-Down-Up Inference
 
 * Teachable Machine 으로 Tensorflow/Keras Model 생성
 
