@@ -1,6 +1,8 @@
 # Thumb-Down-Up
 
-* Teachable Machine 으로 Tensorflow/Keras Model 생성(*.h5, label.txt)
+* Teachable Machine 으로 Tensorflow/Keras Model 생성
+** *.h5
+** label.txt)
 
 * Python OpenCV로 이미지 추론
 
