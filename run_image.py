@@ -39,10 +39,10 @@ print(np.argmax(pred))
 print(threshold)
 
 i = np.argmax(pred)
-results = ["Thumb-Up", "Thumb-Down", "None"]
+labels = ["Thumb-Up", "Thumb-Down", "None"]
 
 img = cv2.resize(img, (500, 500))
-cv2.putText(img, results[i], (10, 30), cv2.FONT_ITALIC, 1, (0, 255, 0), 2)
+cv2.putText(img, labels[i], (10, 30), cv2.FONT_ITALIC, 1, (0, 255, 0), 2)
 cv2.putText(img, str(round(threshold * 100,2)) + " %", (360, 30), cv2.FONT_ITALIC, 1, (0, 255, 0), 2)
 cv2.imshow('result', img)
 # cv2.waitKey(0)

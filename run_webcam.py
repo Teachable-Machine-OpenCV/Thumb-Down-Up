@@ -38,12 +38,14 @@ while cap.isOpened():
     # run the inference
     pred = model.predict(data)
     print(np.argmax(pred))
+    threshold = round(np.max(pred), 2)
 
     i = np.argmax(pred)
-    results = ["Thumb-Up", "Thumb-Down", "None"]
+    labels = ["Thumb-Up", "Thumb-Down", "None"]
 
     img = cv2.resize(img, (500, 500))
-    cv2.putText(img, results[i], (10, 30), cv2.FONT_ITALIC, 1, (0, 255, 0), 2)
+    cv2.putText(img, labels[i], (10, 30), cv2.FONT_ITALIC, 1, (0, 255, 0), 2)
+    cv2.putText(img, str(round(threshold * 100, 2)) + " %", (360, 30), cv2.FONT_ITALIC, 1, (0, 255, 0), 2)
     cv2.imshow('result', img)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
