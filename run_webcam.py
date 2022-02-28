@@ -50,17 +50,3 @@ while cap.isOpened():
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-    ##################
-    '''
-    if pred[0,0] > 0.7:
-        text = "Thumb-up"
-    if pred[0,1] > 0.7:
-        text = "Thumb-down"
-    if pred[0,2] > 0.7:
-        text = "None"
-    img = cv2.resize(img, (500, 500))
-    cv2.putText(img, text, (10,30), cv2.FONT_ITALIC,1,(0,255,0),2)
-    cv2.imshow('result', img)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-        break
-'''
