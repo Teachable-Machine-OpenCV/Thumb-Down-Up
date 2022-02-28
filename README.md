@@ -4,7 +4,7 @@
 
   * *.h5
 
-  * label.txt)
+  * label.txt
 
 * Python OpenCV로 이미지 추론
 
